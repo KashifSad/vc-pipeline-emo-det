@@ -4,7 +4,7 @@ import pickle
 from sklearn.metrics import accuracy_score,precision_score,recall_score,roc_auc_score,classification_report
 import json
 
-test_df = pd.read_csv('./data/processed/test_tfidf.csv')
+test_df = pd.read_csv('./data/processed/test_bow.csv')
 
 x_test = test_df.iloc[:,0:-1].values
 y_test = test_df.iloc[:,-1].values

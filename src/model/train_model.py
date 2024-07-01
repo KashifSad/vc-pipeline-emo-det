@@ -7,7 +7,7 @@ import yaml
 params = yaml.safe_load(open('params.yaml','r'))['model_building']
 from sklearn.ensemble import GradientBoostingClassifier
 
-train_df = pd.read_csv('./data/processed/train_tfidf.csv')
+train_df = pd.read_csv('./data/processed/train_bow.csv')
 
 x_train = train_df.iloc[:,0:-1].values
 y_train = train_df.iloc[:,-1].values
