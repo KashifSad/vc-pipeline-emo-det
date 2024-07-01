@@ -1,4 +1,4 @@
 [core]
-    remote = my-storage
-['remote "my-storage"']
-    url = F:\dvc-data\tech
+    remote = cloud-storage
+['remote "cloud-storage"']
+    url = s3://dvc-remote-bucket22
