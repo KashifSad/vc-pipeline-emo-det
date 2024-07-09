@@ -85,8 +85,13 @@ stages:
       size: 39910
     - path: src/model/predict_model.py
       hash: md5
-      md5: 4608bd0e184b6c26e8e6dad0d1caf134
-      size: 827
+      md5: 267f2adcdf7bbd9219a409153685cc45
+      size: 1274
+    params:
+      params.yaml:
+        feature_engineering.max_features: 100
+        model_building.learning_rate: 0.01
+        model_building.n_estimators: 30
     outs:
     - path: reports/metrics.json
       hash: md5
