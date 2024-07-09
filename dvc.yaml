@@ -43,5 +43,9 @@ stages:
     deps:
     - models/model.pkl
     - src/model/predict_model.py
+    params:
+    - model_building.n_estimators
+    - model_building.learning_rate
+    - feature_engineering.max_features
     metrics:
     - reports/metrics.json
